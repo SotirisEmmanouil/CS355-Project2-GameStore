@@ -21,7 +21,7 @@
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to bottom, #3F9CBA, #1E5285);
-    
+    filter: blur(15px);
 }
 
 .contact .content
@@ -34,14 +34,19 @@
 {
     font-size: 70px;
     font-weight: 5000;
-    color: #f5f0f0de;
+    color: #f5f0f0; 
+    text-transform: uppercase;
+    text-shadow:2px 3px #000000;
+    padding: 13px;
 }
 
 .contact .content p 
 {
     font-weight: 300;
-    color: #efeaea;
+    color: #f5f0f0;
     font-size: 21px;
+    padding-bottom: 5%;
+    
 }
 
 .container
@@ -108,7 +113,7 @@
     font-size: 30px;
     color: #333;
     font-weight: 500;
-    text-decoration:underline
+
 }
 
 .contactForm .inputBox
