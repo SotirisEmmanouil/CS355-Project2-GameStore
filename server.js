@@ -19,12 +19,17 @@ app.get('/submit', (req, res) => {
 
 app.post('/submit', (req, res) => {
   const title = req.body.title;
-  fs.appendFile('games.txt', title + ",\n", (err) => {
+  const quantity = req.body.quantity; // Get quantity from request body
+  const order = { title, quantity }; // Create an order object with title and quantity
+  orderList.push(order); // Add the order object to the orderList array
+  fs.appendFile('games.txt', `${title}, ${quantity},\n`, (err) => { // Save the title and quantity to the games.txt file
     if (err) throw err;
     console.log('Game saved to file');
   });
   res.send('Submitted Successfully!');
 });
+
+
 
 const server = http.createServer(app);
 
