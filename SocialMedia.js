@@ -1,3 +1,4 @@
+//Increments the counter until it reaches desired number
 const counters = document.querySelectorAll('.counter')
 
 counters.forEach(counter => {
