@@ -5,6 +5,8 @@
     <meta name= "viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <script defer src="home.js"></script>
+    <script defer src="server.js"></script>
+    <!-- <script defer src="submit.js"></script> -->
     <title>S & C & V Video Game Inc</title>
   </head>
   <body>
@@ -20,5 +22,16 @@
  <img src = image.jpg height="200" alt = "store"><footer>Some of our inventory</footer></section>
  
   <button id = "buttonChange" >Change Color of Home Page!</button>
+
+  <div id = "wishList">
+    <h2>Add a game</h2>
+    <form action="http://localhost:3000/submit" method="post">
+      <label for="title">Game:</label>
+      <input type="text" name="title" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="games-list"></div>
  </body>
 </html> 

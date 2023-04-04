@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.Title{
+  position:absolute;
+  top: 15%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  position: fixed;
+  white-space: nowrap;
+
+}
+
+.text{
+  font-size: 80px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f5f2f2;
+  text-shadow:4px 5px #000000;
+  padding: 10px;
+}
+
+body {
+  background: radial-gradient(circle at 50% 50%, #3F9CBA, #1E5285);
+  color: #f5f2f2;
+  font-family: 'Roboto Mono', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.fa-youtube{
+    color: #FF0000; 
+}
+
+.fa-facebook{
+    color: #3b5998; 
+}
+
+.fa-twitter{
+    color: #1DA1F2;   
+}
+     
+.counter {
+    font-size: 70px;
+    margin-top: 10px;
+  }
+
+  .counter-container a:hover{
+    transform: scale(1.4);    
+}
+
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
