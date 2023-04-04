@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*Styling for heading*/
 .Title{
   position:absolute;
   top: 15%; 
@@ -23,6 +24,7 @@
   padding: 10px;
 }
 
+/*Styling and layout for social media icons and text*/
 body {
   background: radial-gradient(circle at 50% 50%, #3F9CBA, #1E5285);
   color: #f5f2f2;
@@ -78,6 +80,8 @@ body {
     margin-top: 10px;
   }
 
+  /*Creates a effect that make the social media icon 
+    larger when the user hovers over it*/
   .counter-container a:hover{
     transform: scale(1.4);    
 }

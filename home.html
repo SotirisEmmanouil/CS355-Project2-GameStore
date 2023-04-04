@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name= "viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
     <script defer src="home.js"></script>
-    <script defer src="server.js"></script>
-    <!-- <script defer src="submit.js"></script> -->
+    <!-- <script defer src="server.js"></script> -->
+    <script defer src="navbar.js"></script>
     <title>S & C & V Video Game Inc</title>
   </head>
   <body>
-  
-  <h1>SteamStacks</h1>
-  <h2>Welcome to our store!</h2>
-  <p> 
-   A Small Scale Video Game Business With Great Prices.<br>
-   We Have A Wide Selection Of Products. Check Out Our Order Page<br>
-   To Place An Order
-  </p>
+    <div class="container">
+      <h1>SteamStacks</h1>
+      <h2>Welcome to our store!</h2>
+      
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="home.html"><i class="fas-home"></i>Home</a></li>
+              <li><a href="todo.html"><i class="fas-about-us"></i>About Us</a></li>
+              <li><a href="order-page.html"><i class="fas-order"></i>Order</a></li>
+              <li><a href="SocialMedia.html"><i class="fas-social-media"></i>Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
- <img src = image.jpg height="200" alt = "store"><footer>Some of our inventory</footer></section>
- 
-  <button id = "buttonChange" >Change Color of Home Page!</button>
+      <p> 
+        A Small Scale Video Game Business With Great Prices.<br>
+        We Have A Wide Selection Of Products. Check Out Our Order Page<br>
+        To Place An Order
+      </p>
+      <img src = image.jpg height="200" alt = "store"><footer>Some of our inventory</footer></section>
+      
+      <button id = "buttonChange" >Change Color of Home Page!</button>
 
-  <div id = "wishList">
-    <h2>Add a game</h2>
-    <form action="http://localhost:3000/submit" method="post">
-      <label for="title">Game:</label>
-      <input type="text" name="title" required>
-      <br>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <div id="games-list"></div>
- </body>
+    </div>
+  </body>
 </html> 
+    

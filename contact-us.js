@@ -1,3 +1,4 @@
+//Adds a blur effect to the page that gradually becomes less blurry 
 const Blur = document.querySelector('.contact')
 
 let load = 0
