@@ -11,6 +11,7 @@
     background: radial-gradient(circle at 50% 50%, #3F9CBA, #1E5285);
 }
 
+/*Styling for the background and layout*/
 .contact
 {
     position: relative;
@@ -21,9 +22,9 @@
     align-items: center;
     flex-direction: column;
     background: linear-gradient(to bottom, #3F9CBA, #1E5285);
-    filter: blur(15px);
 }
 
+/*Styling for heading & description*/
 .contact .content
 {
     max-width: 800px;
@@ -49,6 +50,7 @@
     
 }
 
+/*Container class that creates layout for contact information*/
 .container
 {
     width: 100%;
@@ -73,6 +75,7 @@
 
 }
 
+/*Style for icon and text*/
 .container .contactInfo .box .icon
 {
     min-width: 60px;
@@ -101,6 +104,7 @@
     font-size: 23px;  
 }
 
+/*layout and styling for contact form*/
 .contactForm
 {
     width: 40%;
@@ -136,6 +140,7 @@
     resize: none;
 }
 
+/*styling and layout for pre-existing text*/
 .contactForm .inputBox span
 {
     position: absolute;
@@ -148,6 +153,7 @@
     color: #666;
 }
 
+/*styling and transition of pre-existing text when user clicks the input box*/
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
 .contactForm .inputBox textarea:focus ~ span,
@@ -159,6 +165,7 @@
     
 }
 
+/*style and transformation for submit button*/
 .contactForm .inputBox input[type = "submit"]
 {
     width: 100%;
