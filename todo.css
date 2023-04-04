@@ -12,6 +12,9 @@ body{
 
 /*creates a black background, shadowed test with red outline */
 
+.title{
+  margin-top: 60px;
+}
 h1{
     text-align: center;  
 }
@@ -63,4 +66,49 @@ small{
 }
 input:focus{
     text-shadow: 0 0 3px red, 0 0 6px purple;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }

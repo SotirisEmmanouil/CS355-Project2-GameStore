@@ -85,6 +85,50 @@ body {
   .counter-container a:hover{
     transform: scale(1.4);    
 }
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    background-color: #333;
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
 
 
 @media (max-width: 580px) {

@@ -5,6 +5,7 @@
     <meta name= "viewport" content="width=device-width,initial-scale=1.0">
     <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
     <script defer src="server.js"></script>
+    <link rel="stylesheet" href="order-page.css">
     <title>Game Store Order Page</title>
 	  <style>
 
@@ -38,7 +39,15 @@
 	  </style>
   </head>
   <body>
-    <h1>Game Store Order Page</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html"><i class="fas-home"></i>Home</a></li>
+        <li><a href="todo.html"><i class="fas-about-us"></i>About Us</a></li>
+        <li><a href="order-page.html"><i class="fas-order"></i>Order</a></li>
+        <li><a href="SocialMedia.html"><i class="fas-social-media"></i>Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1>Order Page</h1>
     <form action="http://localhost:3000/submit" method="POST">
       <label for="game">Enter Game Title:</label>
       <input type="text" id="game" name="title" required>

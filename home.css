@@ -1,3 +1,10 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 h1,h2{
     color: green;
     text-align: center;
@@ -55,6 +62,3 @@ footer {
     transform: scale(.98);
 }
 
-#wishList{
-  text-align: center;
-}
