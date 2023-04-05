@@ -12,9 +12,7 @@ body{
 
 /*creates a black background, shadowed test with red outline */
 
-.title{
-  margin-top: 60px;
-}
+
 h1{
     text-align: center;  
 }
@@ -67,7 +65,7 @@ small{
 input:focus{
     text-shadow: 0 0 3px red, 0 0 6px purple;
 }
-
+/* 
 nav {
   position: fixed;
   top: 0;
@@ -111,4 +109,4 @@ nav a:hover {
 
 .active {
   background-color: #4CAF50;
-}
+} */

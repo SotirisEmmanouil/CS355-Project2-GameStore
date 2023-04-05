@@ -7,29 +7,28 @@ app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: false }));
 const hostname = '127.0.0.1';
 const port = 3000;
-const orderList = [];
+const feedbackList = [];
 
 app.get('/', (req, res) => {
   res.send('Hello world!');
 });
 
 app.get('/submit', (req, res) => {
-  res.send({"titles": orderList});
+  res.send({"titles": feedbackList});
 });
 
 app.post('/submit', (req, res) => {
-  const title = req.body.title;
-  const quantity = req.body.quantity; // Get quantity from request body
-  const order = { title, quantity }; // Create an order object with title and quantity
-  orderList.push(order); // Add the order object to the orderList array
-  fs.appendFile('games.txt', `${title}, ${quantity},\n`, (err) => { // Save the title and quantity to the games.txt file
+  const name = req.body.name;
+  const email = req.body.email;
+  const message = req.body.message; // Get message from request body
+  const feedback = { name, email, message }; // Create a feedback object with name, email, and message
+  feedbackList.push(feedback); // Add the feedback object to the feedbackList array
+  fs.appendFile('feedback.txt', `${name}, ${email}, ${message},\n`, (err) => { // Save the name, email, and message to the feedback.txt file
     if (err) throw err;
-    console.log('Game saved to file');
+    console.log('Feedback saved to file');
   });
   res.send('Submitted Successfully!');
 });
-
-
 
 const server = http.createServer(app);
 

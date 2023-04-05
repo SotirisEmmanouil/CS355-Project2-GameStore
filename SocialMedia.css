@@ -85,7 +85,7 @@ body {
   .counter-container a:hover{
     transform: scale(1.4);    
 }
-nav {
+/* nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -128,7 +128,7 @@ nav a:hover {
 
 .active {
   background-color: #4CAF50;
-}
+} */
 
 
 @media (max-width: 580px) {

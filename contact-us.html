@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name= "viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="contactus.css"> 
+    <link rel="stylesheet" href="navbar.css"> 
     <link rel = "icon" href = "favicon.ico" type = "image/x-icon">
     <script src="https://kit.fontawesome.com/3bae3e985a.js" crossorigin="anonymous"></script>
+    <script defer src="feedback.js"></script>
     <script defer src="script.js"></script>
     <script defer src="navbar.js"></script>
     <script defer src="contact-us.js"></script>
@@ -14,12 +16,12 @@
   <body>
  
     <div class="navbar">
-      <nav class="active" id="nav">
+      <nav id="nav">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="faqs.html">F.A.Qs</a></li>
-          <li><a href="about-us.html">About-us</a></li>
-          <li><a href="contact-us.html">Contact-us</a></li>
+          <li><a href="home.html"><i class="fas-home"></i>Home</a></li>
+          <li><a href="todo.html"><i class="fas-about-us"></i>About Us</a></li>
+          <li><a href="contact-us.html"><i class="fas-contact"></i>Contact Us</a></li>
+          <li><a href="SocialMedia.html"><i class="fas-social-media"></i>Social Media</a></li>
         </ul>
       </nav>
       <button class="icon" id="toggle">
@@ -31,7 +33,7 @@
     <!--Heading and Description-->
     <section class = "contact">
       <div class = "content">
-          <h2>Contact Us</h2>
+          <h2 class="title">Contact Us</h2>
           <p>Welcome to SteamStacks's contact us page! <br>
             We're here to help with any questions or concerns you may have regarding our products or services. 
             Whether you're inquiring about the latest releases, looking for technical support, or have a general question, 
@@ -68,18 +70,18 @@
         
         <!--Contact Form for customers to submit questions or concerns-->
         <div class = "contactForm">
-          <form>
+          <form action="http://localhost:3000/submit" method="POST">
             <h2>Send Message</h2>
             <div class = "inputBox">
-              <input type = "text" name = "" required = "required"> 
+              <input type = "text" name="name" required = "required"> 
               <span>Full Name</span>
             </div>
             <div class = "inputBox">
-              <input type = "text" name = "" required = "required"> 
+              <input type = "text" name = "email" required = "required"> 
               <span>Email</span>
             </div>
             <div class = "inputBox">
-              <textarea required = "required"></textarea>
+              <input type = "text" name = "message" required = "required"> 
               <span>Type Your Message...</span>
             </div>
             <div class = "inputBox">
